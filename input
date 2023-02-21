@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+"""my beautiful python code"""
+
+# This program prints the first 10 Fibonacci numbers
+
+def fibonacci(n):
+    """
+    Returns a list of the first n Fibonacci numbers.
+    """
+    fib_list = [0, 1]
+    while len(fib_list) < n:
+        fib_list.append(fib_list[-1] + fib_list[-2])
+    return fib_list
+
+if __name__ == '__main__':
+    n = 10
+    fib_nums = fibonacci(n)
+    print(fib_nums)
